@@ -39,7 +39,7 @@ namespace EventLogWatcherDemo
             }
             catch (EventLogReadingException e)
             {
-                //Log exeception;
+                // Log exeception;
             }
             finally
             {
@@ -80,14 +80,14 @@ namespace EventLogWatcherDemo
 
                 IList<object> logEventProps = ((EventLogRecord)arg.EventRecord).GetPropertyValues(logPropertyContext);
 
-                //Read the event description
+                // Read the event description
                 var description = arg.EventRecord.FormatDescription();
 
                 
             }
             else
             {
-                //Log("The event instance was null.");
+                // Log the event
             }
         }
     }
