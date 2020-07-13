@@ -82,8 +82,6 @@ namespace EventLogWatcherDemo
 
                 // Read the event description
                 var description = arg.EventRecord.FormatDescription();
-
-                
             }
             else
             {
